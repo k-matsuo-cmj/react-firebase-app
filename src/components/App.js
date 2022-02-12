@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import config from '../config/firebase-config';
+import Header from './Header';
 
 class App extends Component {
   constructor() {
@@ -14,7 +15,10 @@ class App extends Component {
 
   render() {
     return (
-      <div>Hello React</div>
+      <>
+        <Header />
+        <div>Hello React</div>
+      </>
     );
   }
 }
